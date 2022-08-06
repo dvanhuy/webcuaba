@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.title{
+    text-align: center;
+    font: 600 30px arial;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container a{
+    text-decoration: none;
+}
+.item{
+    width: 300px ;
+    min-height: 200px;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    font: 600 20px arial; 
+    padding-top: 50px;
+    /* background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-size: cover;
+    
+}
+#dabanh{
+    background-image: url(img/banh.jpg);
+}
+.item:hover{
+    opacity: 0.8;
+}
+.back{
+    position: absolute;
+    font: 20px arial;
+    padding: 20px 40px 20px 20px;
+    background-color: rgb(255, 218, 158);
+    margin-left: 40px;
+}
+.beforeback{
+    box-sizing: border-box;
+    width: 40px;
+    height: 63px;   
+    position:absolute;
+    border-right: 30px solid rgb(255, 218, 158);
+    border-top: 31.5px solid transparent;
+    border-bottom: 31.5px solid transparent;
+}
