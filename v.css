@@ -32,10 +32,28 @@
     background-repeat: no-repeat;
     background-position: center; */
     background-size: cover;
-    
+    font-size: 30px;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
 }
 #dabanh{
     background-image: url(img/banh.jpg);
+}
+#xephangg{
+    background-image: url(img/xephang.jpg);
+}
+#tilechap{
+    background-image: url(img/tilechapbg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    
+}
+#xoso{
+    background-image: url(img/xosobg.webp);
+}
+#coihe{
+    background-image: url(img/coihebg.webp);
 }
 .item:hover{
     opacity: 0.8;
