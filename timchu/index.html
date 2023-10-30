@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./dialog.js"></script> -->
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur cum accusantium, nostrum voluptatem illo
+        aliquam aliquid, asperiores eaque eius voluptate quo nulla ipsum ea beatae, pariatur labore? Adipisci accusamus,
+        sit in rem, libero culpa quibusdam optio minima ipsum cupiditate, placeat recusandae aliquid. Doloremque ut
+        aliquid consectetur nemo sunt aut numquam facilis natus laborum, error ipsum animi, blanditiis laudantium neque
+        vero perspiciatis repudiandae laboriosam velit modi in veniam! Perferendis, corporis magni. Soluta dolorum,
+        quibusdam cum deserunt labore impedit delectus unde repellendus natus ab, quidem nam quo! Tempore delectus porro
+        dolorem labore sit ducimus assumenda quisquam, animi, dicta temporibus facere atque alias nihil, perferendis
+        doloremque mollitia. Ex repudiandae voluptates minus natus illum iure doloremque nesciunt, unde accusantium
+        deleniti amet! Quo eius ut id, illo maiores fugiat sed numquam accusantium minus aliquid laudantium atque
+        obcaecati corporis? Dicta corrupti excepturi quaerat ipsum neque, error incidunt, tempore odit maiores omnis
+        impedit recusandae laudantium nam dolore, earum consequatur quis fugit saepe. Dolor soluta ipsa, ab debitis vero
+        aut tempora hic dicta tempore aspernatur, saepe adipisci enim. Voluptate tenetur, a, repellendus natus nisi
+        iusto ex incidunt assumenda ut nobis voluptas dolorem enim eius accusamus tempora nulla sed magni vero
+        distinctio molestias! Harum fuga nostrum odit expedita, dolorum, molestias ratione quidem nihil laboriosam ad
+        laborum qui deleniti beatae in reprehenderit sequi sapiente, unde obcaecati vel mollitia quasi error
+        dignissimos? Ipsum vero, odit minus necessitatibus provident veritatis rerum aut mollitia, aperiam temporibus ea
+        asperiores atque, saepe quas pariatur. Hic quo consectetur sunt dolore! Magnam natus odit recusandae enim,
+        expedita amet deserunt aut aliquid officiis nisi? Quas fugit nostrum excepturi deleniti temporibus explicabo
+        quisquam alias culpa placeat, eaque quibusdam officiis, repellat distinctio porro? Cum earum, sapiente ad autem
+        eos iure optio esse, deleniti maiores sint nemo fuga harum minima aperiam obcaecati quisquam vel debitis sequi,
+        adipisci repudiandae. Ea, adipisci.</div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptas vitae aliquid, modi qui quam ullam
+        quis accusamus temporibus suscipit ut atque nesciunt quisquam earum, laborum reiciendis laboriosam aliquam
+        voluptate.</div>
+    <div class="containerdinhnamvan">
+        <div class="close_button" onclick="closeFrame()">✗</div>
+        <div class="timkiemcn"><input type="text" id="timkiem" placeholder="Tìm kiếm ..."></div>
+        <div class="buttoncn"><input type="button" id="search" value="Tìm chữ này" onclick="search();"></div>
+        <div class="mess"></div>
+        <div class="keyboard">
+            <div onclick="document.getElementById('timkiem').value+='A'">A</div>
+            <div onclick="document.getElementById('timkiem').value+='B'">B</div>
+            <div onclick="document.getElementById('timkiem').value+='C'">C</div>
+            <div onclick="document.getElementById('timkiem').value+='D'">D</div>
+            <div onclick="document.getElementById('timkiem').value+='E'">E</div>
+            <div onclick="document.getElementById('timkiem').value+='F'">F</div>
+            <div onclick="document.getElementById('timkiem').value+='G'">G</div>
+            <div onclick="document.getElementById('timkiem').value+='H'">H</div>
+            <div onclick="document.getElementById('timkiem').value+='I'">I</div>
+            <div onclick="document.getElementById('timkiem').value+='J'">J</div>
+            <div onclick="document.getElementById('timkiem').value+='K'">K</div>
+            <div onclick="document.getElementById('timkiem').value+='L'">L</div>
+            <div onclick="document.getElementById('timkiem').value+='M'">M</div>
+            <div onclick="document.getElementById('timkiem').value+='N'">N</div>
+            <div onclick="document.getElementById('timkiem').value+='O'">O</div>
+            <div onclick="document.getElementById('timkiem').value+='P'">P</div>
+            <div onclick="document.getElementById('timkiem').value+='Q'">Q</div>
+            <div onclick="document.getElementById('timkiem').value+='R'">R</div>
+            <div onclick="document.getElementById('timkiem').value+='S'">S</div>
+            <div onclick="document.getElementById('timkiem').value+='T'">T</div>
+            <div onclick="document.getElementById('timkiem').value+='U'">U</div>
+            <div onclick="document.getElementById('timkiem').value+='V'">V</div>
+            <div onclick="document.getElementById('timkiem').value+='W'">W</div>
+            <div onclick="document.getElementById('timkiem').value+='X'">X</div>
+            <div onclick="document.getElementById('timkiem').value+='Y'">Y</div>
+            <div onclick="document.getElementById('timkiem').value+='Z'">Z</div>
+            <div onclick="document.getElementById('timkiem').value+=' '"><img src="../img/spaceicon.png"></div>
+            <div onclick="document.getElementById('timkiem').value = document.getElementById('timkiem').value.slice(0, -1)"><img src="../img/backspace.png"></div>
+        </div>
+    </div>
+</body>
+<style>
+    .containerdinhnamvan #timkiem {
+        margin: auto;
+        width: 70%;
+        height: 60px;
+        padding: 10px 20px;
+        font-size: 40px;
+    }
+
+    .containerdinhnamvan .timkiemcn {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .containerdinhnamvan .buttoncn {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .containerdinhnamvan .buttoncn input {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        background-color: red;
+        font-weight: bold;
+        color: white;
+    }
+
+    .containerdinhnamvan .mess {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .containerdinhnamvan {
+        position: fixed;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+        background-color: white;
+        border: 1px solid black;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .containerdinhnamvan .close_button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 40px;
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .containerdinhnamvan .close_button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .keyboard{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+    }
+    .keyboard > div{
+        border: 1px solid black;
+        height: 60px;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+        user-select: none;
+    }
+    .keyboard > div:hover{
+        background-color: rgb(255, 61, 61);
+        color: white;
+    }
+    .keyboard img{
+        width: 50%;
+        height: 50%;
+    }
+</style>
+<script>
+    function search() {
+        document.getElementsByClassName("containerdinhnamvan")[0].style.display = "none";
+        const searchtext = document.getElementById("timkiem").value
+        const special = /[\\[{().+*?|^$]/g;
+        if (searchtext !== "") {
+            if (special.test(searchtext)) searchtext = searchtext.replace(special, "\\$&");
+            let regExp = new RegExp(searchtext, "gi");
+            document.documentElement.innerHTML = (document.documentElement.innerHTML).replace(regExp, "<mark>$&</mark>");
+        }
+    }
+
+    function closeFrame() {
+        document.getElementsByClassName("containerdinhnamvan")[0].style.display = "none";
+    }
+
+</script>
+
+</html>
