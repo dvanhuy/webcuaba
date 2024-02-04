@@ -137,7 +137,7 @@ function search() {
             if (special.test(searchtext)) searchtext = searchtext.replace(special, "\\$&");
             let regExp = new RegExp(searchtext, "gi");
             document.documentElement.innerHTML = (document.documentElement.innerHTML).replace(regExp, "<mark>$&</mark>");
-            document.getElementsByClassName("containerdinhnamvan")[0].outerHTML =""
+            document.getElementsByClassName("containerdinhnamvan")[0].outerHTML ="";
         }
     } catch (error) {
         console.log("lỗi searchtext");
@@ -148,7 +148,7 @@ function search() {
 
 function closeFrame() {
     try {
-        document.getElementsByClassName("containerdinhnamvan")[0].outerHTML =""
+        document.getElementsByClassName("containerdinhnamvan")[0].outerHTML ="";
         console.log("ads");
     } catch (error) {
         console.log(error);
