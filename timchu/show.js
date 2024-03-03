@@ -1,4 +1,4 @@
-javascript:var dnvhtml = `
+var dnvhtml = `
 <div class="close_button" onclick="closeFrame()">✗</div>
 <div class="timkiemcn"><input type="text" id="timkiem" placeholder="Tìm kiếm ..."></div>
 <div class="buttoncn"><input type="button" id="search" value="Tìm chữ này" onclick="search()"></div>
